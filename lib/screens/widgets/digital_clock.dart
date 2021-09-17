@@ -1,14 +1,14 @@
 import 'dart:async';
-
-import 'package:clock_app/size_config.dart';
 import 'package:flutter/material.dart';
 
-class DisplayTime extends StatefulWidget {
+import '/size_config.dart';
+
+class DigitalClock extends StatefulWidget {
   @override
-  _DisplayTime createState() => _DisplayTime();
+  _DigitalClock createState() => _DigitalClock();
 }
 
-class _DisplayTime extends State<DisplayTime> {
+class _DigitalClock extends State<DigitalClock> {
   // Time During the day representing hour:minute pair
   TimeOfDay _timeOfDay = TimeOfDay.now();
 

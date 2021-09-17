@@ -1,9 +1,9 @@
-import 'dart:async';
-
+import 'package:clock_app/screens/widgets/analog_clock.dart';
+import 'package:clock_app/size_config.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import 'display_time.dart';
+import 'digital_clock.dart';
 
 class Body extends StatelessWidget {
   @override
@@ -17,7 +17,8 @@ class Body extends StatelessWidget {
           "Kharkiv UA | GMT+3",
           style: Theme.of(context).textTheme.bodyText1,
         ),
-        DisplayTime()
+        DigitalClock(),
+        AnalogClock(),
       ]),
     );
   }
